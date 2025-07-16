@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박성환 자기소개서</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #e0e0e0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #1c1c1c;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #444;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+    }
+
+    .info-list li {
+      margin: 10px 0;
+    }
+
+    .highlight-phrase {
+      margin-top: 25px;
+      padding: 18px 22px;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+      display: none;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .highlight-phrase.visible {
+      display: block;
+      opacity: 1;
+    }
+
+    .highlight {
+      background-color: #2a2a2a;
+      padding: 25px;
+      border-left: 6px solid #e50914;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+
+    .resolution {
+      background-color: #2a2a2a;
+      padding: 25px;
+      border-left: 6px solid #aaa;
+      border-radius: 6px;
+      line-height: 1.6;
+      margin-top: -20px;
+    }
+
+    .reveal-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #e50914;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .reveal-button:hover {
+      background-color: #b00610;
+    }
+  </style>
+  <script>
+    function revealPhrase() {
+      const phrase = document.querySelector('.highlight-phrase');
+      phrase.classList.add('visible');
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>자기소개서 - 박성환</h1>
+
+    <div class="section">
+      <h2>기본 정보</h2>
+      <ul class="info-list">
+        <li><strong>이름:</strong> 박성환</li>
+        <li><strong>나이:</strong> 01년생</li>
+        <li><strong>취미:</strong> 요리, 헬스, 베이스기타</li>
+      </ul>
+
+      <button class="reveal-button" onclick="revealPhrase()">나를 표현하는 한 마디 보기</button>
+      <div class="highlight-phrase">
+        저는 '비비고'입니다.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>관심사</h2>
+      <div class="highlight">
+        제 관심사는 <strong>싸피(SSAFY)</strong>입니다.<br><br>
+        싸피를 통해 배우게 될 다양한 언어와 기술, 그리고 제가 앞으로 나아갈 비전에 가장 큰 관심을 갖고 시간을 투자하고 있습니다.<br><br>
+        <strong>개발이라는 학습 자체가 처음</strong>이지만, 진심으로 배우고자 하는 자세로 임하고 있습니다. 그렇기에 질문이 많을 수도 있다는 점 미리 양해 부탁드립니다.<br><br>
+        또 다른 관심사는 <strong>향후 비전</strong>입니다. 개발 공부가 일정 수준에 도달했을 때, 저는 개발자 혹은 IT기획자 등 다양한 진로 가능성을 탐색하고 싶습니다. 이를 위해 끊임없이 정보를 수집하고 방향성을 정립해나가고 있습니다.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>각오</h2>
+      <div class="resolution">
+        Vision공자 도전에 도움과 응원 해주시면 감사하겠습니다. 잘 부탁드립니다!
+      </div>
+    </div>
+  </div>
+</body>
+</html>
